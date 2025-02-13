@@ -1,37 +1,24 @@
 {
-  "interface": {
-    "name": "TVBox API Configuration",
-    "version": "1.0",
-    "sources": [
-      {
-        "key": "NoSearch_csp_DiDuan",
-        "name": "低端纯净",
-        "type": 3,
-        "api": "csp_Ddrk",
-        "searchable": 1,
-        "playerType": 1,
-        "quickSearch": 1,
-        "filterable": 0,
-        "apiEndpoint": "http://api.example.com/csp_Ddrk"  // 确保提供完整的 API 端点
-      }
-    ],
-    "settings": {
-      "defaultSource": "NoSearch_csp_DiDuan",
-      "allowSearch": true,
-      "allowFilter": false,
-      "playerType": 1
+  "spider": "https://lz.qaiu.top/d/lz/ifbEX2mg45je",
+  "wallpaper": "https://深色壁纸.xxooo.cf/",
+  "sites": [
+    {
+      "key": "农民影视",
+      "name": "农民┃影视",
+      "type": 3,
+      "api": "csp_Nmys",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
     },
-    "actions": [
-      {
-        "name": "Search",
-        "enabled": true,
-        "type": "quickSearch"
-      },
-      {
-        "name": "Filter",
-        "enabled": false,
-        "type": "basicFilter"
-      }
-    ]
-  }
+    {
+      "key": "瓜子影视1",
+      "name": "瓜子┃影视",
+      "type": 3,
+      "api": "csp_Gz360",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    }
+  ]
 }
