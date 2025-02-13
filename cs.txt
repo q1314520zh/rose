@@ -1,2 +1,37 @@
-Source{name='文才弹幕', url='http://example.com/danmu_source', enabled=true}
-Source{name='低端纯净', url='http://example.com/low_quality_source', enabled=true}
+{
+  "interface": {
+    "name": "TVBox API Configuration",
+    "version": "1.0",
+    "sources": [
+      {
+        "key": "NoSearch_csp_DiDuan",
+        "name": "低端纯净",
+        "type": 3,
+        "api": "csp_Ddrk",
+        "searchable": 1,
+        "playerType": 1,
+        "quickSearch": 1,
+        "filterable": 0
+      }
+    ],
+    "settings": {
+      "defaultSource": "NoSearch_csp_DiDuan",
+      "allowSearch": true,
+      "allowFilter": false,
+      "playerType": 1,
+      "apiEndpoint": "http://api.example.com/csp_Ddrk"
+    },
+    "actions": [
+      {
+        "name": "Search",
+        "enabled": true,
+        "type": "quickSearch"
+      },
+      {
+        "name": "Filter",
+        "enabled": false,
+        "type": "basicFilter"
+      }
+    ]
+  }
+}
